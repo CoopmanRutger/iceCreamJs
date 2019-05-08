@@ -1,0 +1,415 @@
+/
+
+
+@font-face {
+    font-family: 'tisaproregular';
+    src: url('../fonts/tisapro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisaprobold';
+    src: url('../fonts/tisapro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisaproitalic';
+    src: url('../fonts/tisapro-ita-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*---------------------*/
+/*   GENERAL ELEMENTS  */
+/*---------------------*/
+
+body {
+    font-family: 'tisaproregular', Times, serif;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    color: #333;
+    padding-top: 10px;
+}
+
+a {
+    color: #f4840b
+}
+
+h1 {
+    color: #f4840b;
+    font-family: "tisaprobold", Times, serif;
+    font-size: 3.5rem;
+    text-shadow: 2px 1px 1px rgba(237,222,227,.5);
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+h2 {
+    color: #444;
+    font-size: 1.3rem;
+    margin-bottom: 3%;
+    font-family: 'tisaprobold', Times, serif;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 1%;
+}
+
+p {
+    line-height: 130%;
+    font-size: 1.1rem;
+    margin-bottom: 1%;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    font-family: tisaproitalic, Times, serif;
+    padding: 1.2%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.intro {
+    background-color: #fbf9d7;
+    padding: 3%
+}
+
+.intro strong {
+    color: #f4840b;
+    font-family: 'tisaprobold', Times, serif;
+}
+
+/*---------------------*/
+/*   GENERAL CLASSES   */
+/*---------------------*/
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+}
+
+.cf:after {
+    clear: both;
+}
+
+#customerconfiguration .active {
+    border: 1px dashed #E5E5E5;
+}
+.visible {
+    display: block;
+}
+#dummy{
+    display: none;
+}
+/*---------------------*/
+/* CONTAINING ELEMENTS */
+/*---------------------*/
+section {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.icecreams {
+    clear: both;
+    border-top: 1px dashed #E5E5E5;
+    padding-top: 3%;
+}
+
+#customerconfiguration {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+/*------------------------*/
+/*      CONFIGURATION     */
+/*------------------------*/
+
+aside h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1%;
+    color: #f4840b;
+    font-family: "tisaprobold", Times, serif;
+    letter-spacing: 1px
+}
+
+aside {
+    margin-top: 4%;
+}
+aside li {
+    display: inline;
+}
+aside a{
+    display: inline-block;
+    background-color: #fbf9d7;
+    padding: 1%;
+    padding-left: 30px;
+    color: #f4840b;
+    font-family: "tisaprobold", Times, serif;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+aside a:hover {
+    background-color: #fbf9d7;
+}
+
+/* Images */
+
+aside li [data-value=cone] {
+    background-image: url('../../images/cone.svg');
+}
+
+aside li [data-value=bowl] {
+    background-image: url('../../images/bowl.svg');
+}
+
+
+aside li [data-value=paper-bowl] {
+    background-image: url('../../images/paper-bowl.svg');
+}
+
+aside li [data-value=vanilla] {
+    background-image: url('../../images/vanilla.svg');
+}
+aside li [data-value=pistachio] {
+    background-image: url('../../images/pistachio.svg');
+}
+aside li [data-value=strawberry] {
+    background-image: url('../../images/strawberry.svg');
+}
+
+
+aside li [data-value=whipped-cream] {
+    background-image: url('../../images/whipped-cream.svg');
+}
+
+aside li [data-value=cookie] {
+    background-image: url('../../images/cookie.svg');
+}
+
+aside li [data-value=sprinkles] {
+    background-image: url('../../images/sprinkles.svg');
+}
+
+
+aside li [data-value=chocolate-bar] {
+    background-image: url('../../images/chocolate-bar.svg');
+}
+
+
+
+
+/*------------------------*/
+/*   ICE CREAM STYLES     */
+/*------------------------*/
+
+.column {
+    width: 40%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    float: left;
+}
+/*
+.settings {
+    width: 50%;
+    margin-right: 0;
+    float: left;
+}*/
+#customerconfiguration figure {
+    width: 12%;
+    margin-right: 1%;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    text-align: center;
+    border: 1px solid white;
+}
+#customerconfiguration figure img {
+    max-width: 100%;
+    position: relative;
+}
+#customerconfiguration .holder {
+    position: relative;
+    z-index: 10;
+}
+
+#customerconfiguration .flavour {
+    bottom: -20px;
+    width: 45%;
+    margin-left: 1%;
+    z-index: 1;
+}
+
+#customerconfiguration .topping {
+    bottom: -40px;
+    margin-left: 1%;
+    z-index: 20;
+    width: 40%;
+}
+/* Exceptions */
+
+#customerconfiguration [src="images/whipped-cream.svg"]{
+    width: auto;
+}
+#customerconfiguration [src="images/sprinkles.svg"]{
+    width: 80%;
+    bottom: -50px;
+    z-index: 30;
+}
+
+#customerconfiguration [src="images/stick.svg"]{
+    width: 45%;
+}
+
+/*
+
+#customerconfiguration .vanilla {
+    right: -10px;
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+#customerconfiguration .cone {
+    width: 45%
+}
+*/
+    /*------------------------*/
+/*  REPEATING ELEMENTS    */
+/*------------------------*/
+
+.next {
+    display: inline-block;
+    background-color: #DDD;
+    padding: 3%;
+    color: #FFFFFF;
+    font-family: "tisaprobold", Times, serif;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+.next:hover {
+    background-color: #f4840b;
+}
+
+
+/*---------------------*/
+/*    FORM ELEMENTS    */
+/*---------------------*/
+
+
+form {
+    margin-top: 5%;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+}
+
+
+fieldset {
+    display: none;
+}
+
+input:not([type="radio"]), label {
+    display: block;
+    margin-bottom: 2.5%;
+}
+.icecreams input, input[type="radio"] + label {display: inline-block}
+.icecreams input[type="text"] {
+    margin-bottom: 4%;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea{
+    border: 1px dashed  #f4840b;
+    border-radius: 4px;
+    padding: 3%;
+    width: 80%;
+    margin-bottom: 2%;
+    font-family: "tisaproregular", Times, serif;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus{
+    outline:none;
+    border-style:solid;
+}
+
+input[type="text"],input[type="number"] {
+    padding: 1%;
+}
+input[type="number"] {
+    width: 12%
+}
+
+input[type="radio"] + label {
+    font-size: 0.9rem;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+input[type="submit"] {
+    border-style: none;
+    display: inline-block;
+    padding: 1%;
+    font-size: 1.1rem;
+}
+
+
+/*---------------------*/
+/*       SUMMARY       */
+/*---------------------*/
+.summary>p {
+    text-align: center;
+}
+.summary>p em {
+    color: #f4840b;
+}
+.summary h3 {
+    color: #f4840b;
+    font-size: 1.2rem;
+}
+.summary p strong {
+    font-family: "tisaprobold", Times, serif;
+}
+.summary p {
+    margin-bottom: 1%;
+}
+
+.summary li {
+    border-bottom: 1px dashed #E5E5E5;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.summary li:last-child {
+    border: none
+}
+
+.summary li p {
+    margin-left: 3.5%;
+}

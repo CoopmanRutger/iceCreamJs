@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ice cream parlour</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" href="assets/css/screen.css" type="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<section>
+
+	<h1>Ice cream parlour</h1>
+	<div class="intro">
+		<p>Order your favourite<strong> ice cream</strong> hand made from our great patissiers </p>
+		<p>Feel free to experiment with different <strong>toppings</strong> and <strong>tastes</strong>. </p>
+	</div>
+	<form>
+		<fieldset class="visible cf">
+			<div class="column">
+				<label for="nameCostumer">what is your name?</label>
+				<input type="text" name="nameCostumer">
+			</div>
+			<div class="column">
+				<label for="amountOfIceCreme">How many ice creams would you like?</label>
+				<input type="number" name="amountOfIceCreme" min="1" max="5">
+			</div>
+			<div class="icecreams">
+				<h2>Customise your ice creams</h2>
+				<div id="customerconfiguration">
+				<!-- gegenereerde ijsjes komen hier -->
+				</div>
+				<aside>
+					<h3>Configuration:</h3>
+					<h4>Type:</h4>
+					<ul class="type">
+						<li><a href="#" data-value="cone">Cone</a></li>
+						<li><a href="#" data-value="bowl">Bowl</a></li>
+						<li><a href="#" data-value="paper-bowl">Paper Bowl</a></li>
+					</ul>
+					<h4>Taste:</h4>
+					<ul class="flavour">
+						<li><a href="#" data-value="vanilla">Vanilla</a></li>
+						<li><a href="#" data-value="strawberry">Strawberry</a></li>
+						<li><a href="#" data-value="pistachio">Pistachio</a></li>
+					</ul>
+					<h4>Toppings:</h4>
+					<ul class="topping">
+						<li><a href="#" data-value="whipped-cream">Whipped cream</a></li>
+						<li><a href="#" data-value="cookie">Cookie</a></li>
+						<li><a href="#" data-value="sprinkles">Sprinkles</a></li>
+						<li><a href="#" data-value="chocolate-bar">Chocolate bar</a></li>
+					</ul>
+				</aside>
+			</div>
+			<a href="#" class="next">Configure delivery details</a>
+		</fieldset>
+		<fieldset class="df">
+			<label for="email">Email: </label>
+			<input type="text" name="email" required="required">
+			<label for="deliveryDate">Delivery date: </label>
+			<input type="date" name="deliveryDate" required="required">
+			<label for="address">Address: </label>
+			<input type="text" name="address" required="required">
+			<label for="newsletter">Are you interested in our newsletter?</label>
+			<input type="radio" name="yes" value="Yes"><label for="yes">Yes</label>
+			<input type="radio" name="no" value="No"><label for="no">No</label>
+			<br>
+			<input id="order" class="next" type="submit" value="Finalise order">
+		</fieldset>
+		<fieldset class="summary">
+			<p>Thank you for ordering <em></em>! <br />We took down the following details: </p>
+			<p>A total of <strong class="total"></strong> ice cream<span class="plural"></span></p>
+			<ul>
+			</ul>
+
+		</fieldset>
+	</form>
+
+	<footer>Graphics courtesy of <a href="http://www.freepik.com/" target="_blank">Freepik</a></footer>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
